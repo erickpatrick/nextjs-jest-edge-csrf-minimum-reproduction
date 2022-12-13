@@ -2,13 +2,13 @@
  * @jest-environment node
  */
 
-import { xxxx } from "./myfile";
+import { exportedFunction } from "./myfile";
 import { NextRequest } from "next/server";
 
 describe('ddd', () => {
     it('description', async () => {
         // Arrange
-        expect(await xxxx({} as NextRequest)).toBe(undefined)
+        expect(await exportedFunction({} as NextRequest)).toBe(undefined)
         // Act
         // Assert
     });
